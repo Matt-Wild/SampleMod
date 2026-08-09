@@ -1,16 +1,14 @@
 package com.spilledsoup.samplemod;
 
 import com.spilledsoup.umapi.UMAPI;
+import com.spilledsoup.umapi.UMAPIMod;
 
-public final class SampleMod {
+public final class SampleMod implements UMAPIMod {
 
-    private SampleMod() {
-    }
-
-    public static void main(String[] args) {
-        System.out.println(
-                "SampleMod successfully connected to UMAPI " +
-                        UMAPI.getVersion()
-        );
+    @Override
+    public void initialise() {
+        UMAPI.events().onPlayerJoin(player -> {
+            player.sendMessage("Welcome, " + player.getName() + "!");
+        });
     }
 }
