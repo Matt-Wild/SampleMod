@@ -7,8 +7,13 @@ public final class SampleMod implements UMAPIMod {
 
     @Override
     public void initialise() {
+        UMAPI.logger().info("SampleMod initialised.");
+
         UMAPI.events().onPlayerJoin(player -> {
-            player.sendMessage("Welcome, " + player.getName() + "!");
+            String playerName = player.getName();
+
+            UMAPI.logger().info("Welcoming " + playerName + ".");
+            player.sendMessage("Welcome, " + playerName + "!");
         });
     }
 }

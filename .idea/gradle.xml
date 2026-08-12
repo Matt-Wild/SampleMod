@@ -14,6 +14,7 @@
                   <project path="$PROJECT_DIR$/../UMAPI/gradle-plugin" />
                   <project path="$PROJECT_DIR$/../UMAPI/platforms" />
                   <project path="$PROJECT_DIR$/../UMAPI/platforms/fabric-1.20.1" />
+                  <project path="$PROJECT_DIR$/../UMAPI/platforms/neoforge-1.20.1" />
                   <project path="$PROJECT_DIR$/../UMAPI/settings-plugin" />
                 </projects>
               </build>
@@ -30,6 +31,7 @@
             <option value="$PROJECT_DIR$/../UMAPI/gradle-plugin" />
             <option value="$PROJECT_DIR$/../UMAPI/platforms" />
             <option value="$PROJECT_DIR$/../UMAPI/platforms/fabric-1.20.1" />
+            <option value="$PROJECT_DIR$/../UMAPI/platforms/neoforge-1.20.1" />
             <option value="$PROJECT_DIR$/../UMAPI/settings-plugin" />
           </set>
         </option>
