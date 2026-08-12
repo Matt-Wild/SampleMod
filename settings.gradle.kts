@@ -1,12 +1,9 @@
 pluginManagement {
-    repositories {
-        maven {
-            name = "Fabric"
-            url = uri("https://maven.fabricmc.net/")
-        }
-        mavenCentral()
-        gradlePluginPortal()
-    }
+    includeBuild("../UMAPI")
+}
+
+plugins {
+    id("com.spilledsoup.umapi.settings")
 }
 
 rootProject.name = "SampleMod"

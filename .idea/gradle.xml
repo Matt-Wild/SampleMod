@@ -11,8 +11,10 @@
                 <projects>
                   <project path="$PROJECT_DIR$/../UMAPI" />
                   <project path="$PROJECT_DIR$/../UMAPI/api" />
+                  <project path="$PROJECT_DIR$/../UMAPI/gradle-plugin" />
                   <project path="$PROJECT_DIR$/../UMAPI/platforms" />
                   <project path="$PROJECT_DIR$/../UMAPI/platforms/fabric-1.20.1" />
+                  <project path="$PROJECT_DIR$/../UMAPI/settings-plugin" />
                 </projects>
               </build>
             </builds>
@@ -25,8 +27,10 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/../UMAPI" />
             <option value="$PROJECT_DIR$/../UMAPI/api" />
+            <option value="$PROJECT_DIR$/../UMAPI/gradle-plugin" />
             <option value="$PROJECT_DIR$/../UMAPI/platforms" />
             <option value="$PROJECT_DIR$/../UMAPI/platforms/fabric-1.20.1" />
+            <option value="$PROJECT_DIR$/../UMAPI/settings-plugin" />
           </set>
         </option>
       </GradleProjectSettings>
