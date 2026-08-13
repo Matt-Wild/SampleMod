@@ -8,7 +8,7 @@ Its job is to prove that a SpilledSoup mod can be written against the Universal 
 
 The long-term ideal is for SampleMod to be completely loader- and version-neutral. In that state, SampleMod should not need loader-specific Java code, loader-specific Gradle configuration, or direct references to Minecraft versions and loaders.
 
-During development, SampleMod declares one UMAPI target while UMAPI learns to own each loader/version path safely. The current NeoForge transition shape is:
+During development, SampleMod declares UMAPI targets while UMAPI learns to own each loader/version path safely. The current 1.20.1 target shape is:
 
 ```kotlin
 plugins {
@@ -25,7 +25,10 @@ umapi {
     }
 
     targets {
+        fabric("1.20.1")
         neoforge("1.20.1")
+        forge("1.20.1")
+        quilt("1.20.1")
     }
 }
 ```
@@ -34,9 +37,9 @@ Eventually, even target selection may move out of SampleMod if SpilledSoup build
 
 ## Current State
 
-SampleMod currently declares the NeoForge 1.20.1 path while UMAPI's second loader target is being introduced. The earlier Fabric 1.20.1 path is still preserved in UMAPI and was the first known-good launch path.
+SampleMod currently declares Fabric, NeoForge, Forge, and Quilt targets for Minecraft 1.20.1. Fabric was the first known-good launch path, NeoForge has been tested successfully, and Forge and Quilt are being introduced through the same UMAPI target model.
 
-SampleMod declares neutral mod metadata and its UMAPI target. UMAPI owns the loader tooling, Minecraft dependency, loader/platform dependency, UMAPI platform dependency, generated loader metadata, generated NeoForge entrypoint bridge, runtime tasks, and exported jar location for the current target.
+SampleMod declares neutral mod metadata and its UMAPI targets. UMAPI owns the loader tooling, Minecraft dependency, loader/platform dependency, UMAPI platform dependency, generated loader metadata, generated Forge-family entrypoint bridges, runtime tasks, and exported jar location for each declared target.
 
 SampleMod still uses the UMAPI settings plugin so Gradle can resolve UMAPI's loader tooling before the main project plugin is loaded.
 
@@ -68,15 +71,21 @@ The UMAPI plugin also exports the finished target jar to:
 build/umapi/exports/
 ```
 
-UMAPI also provides runtime tasks for launching the current target:
+UMAPI also provides runtime tasks for launching the declared targets:
 
 ```powershell
 .\gradlew.bat runUMAPIFabric1201Client
 .\gradlew.bat runUMAPIFabric1201Server
 .\gradlew.bat runUMAPINeoForge1201Client
 .\gradlew.bat runUMAPINeoForge1201Server
+.\gradlew.bat runUMAPIForge1201Client
+.\gradlew.bat runUMAPIForge1201Server
+.\gradlew.bat runUMAPIQuilt1201Client
+.\gradlew.bat runUMAPIQuilt1201Server
 .\gradlew.bat runUMAPIClient
 .\gradlew.bat runUMAPIServer
 ```
 
-With SampleMod's current single target, the neutral `runUMAPIClient` and `runUMAPIServer` shortcuts run the NeoForge 1.20.1 target.
+With multiple declared targets, the neutral `runUMAPIClient` and `runUMAPIServer` shortcuts use UMAPI's default runtime selection unless SampleMod declares its own runtime default.
+
+UMAPI keeps loader runtime data in target-specific directories under `runs/`, so testing one loader does not reuse another loader's config, logs, or saves.

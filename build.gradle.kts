@@ -17,5 +17,7 @@ umapi {
     targets {
         fabric("1.20.1")
         neoforge("1.20.1")
+        forge("1.20.1")
+        quilt("1.20.1")
     }
 }
