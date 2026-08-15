@@ -13,6 +13,8 @@
                   <project path="$PROJECT_DIR$/../UMAPI/api" />
                   <project path="$PROJECT_DIR$/../UMAPI/gradle-plugin" />
                   <project path="$PROJECT_DIR$/../UMAPI/platforms" />
+                  <project path="$PROJECT_DIR$/../UMAPI/platforms/fabric-1.18.2" />
+                  <project path="$PROJECT_DIR$/../UMAPI/platforms/fabric-1.19.2" />
                   <project path="$PROJECT_DIR$/../UMAPI/platforms/fabric-1.20.1" />
                   <project path="$PROJECT_DIR$/../UMAPI/platforms/fabric-1.20.4" />
                   <project path="$PROJECT_DIR$/../UMAPI/platforms/fabric-1.20.6" />
@@ -22,6 +24,11 @@
                   <project path="$PROJECT_DIR$/../UMAPI/platforms/fabric-1.21.3" />
                   <project path="$PROJECT_DIR$/../UMAPI/platforms/fabric-1.21.5" />
                   <project path="$PROJECT_DIR$/../UMAPI/platforms/fabric-1.21.8" />
+                  <project path="$PROJECT_DIR$/../UMAPI/platforms/fabric-26.1.2" />
+                  <project path="$PROJECT_DIR$/../UMAPI/platforms/fabric-26.2" />
+                  <project path="$PROJECT_DIR$/../UMAPI/platforms/forge-1.16.5" />
+                  <project path="$PROJECT_DIR$/../UMAPI/platforms/forge-1.18.2" />
+                  <project path="$PROJECT_DIR$/../UMAPI/platforms/forge-1.19.2" />
                   <project path="$PROJECT_DIR$/../UMAPI/platforms/forge-1.20.1" />
                   <project path="$PROJECT_DIR$/../UMAPI/platforms/forge-1.20.4" />
                   <project path="$PROJECT_DIR$/../UMAPI/platforms/forge-1.20.6" />
@@ -34,6 +41,8 @@
                   <project path="$PROJECT_DIR$/../UMAPI/platforms/neoforge-1.21.3" />
                   <project path="$PROJECT_DIR$/../UMAPI/platforms/neoforge-1.21.5" />
                   <project path="$PROJECT_DIR$/../UMAPI/platforms/neoforge-1.21.8" />
+                  <project path="$PROJECT_DIR$/../UMAPI/platforms/neoforge-26.1.2" />
+                  <project path="$PROJECT_DIR$/../UMAPI/platforms/neoforge-26.2" />
                   <project path="$PROJECT_DIR$/../UMAPI/platforms/quilt-1.20.1" />
                   <project path="$PROJECT_DIR$/../UMAPI/platforms/quilt-1.20.4" />
                   <project path="$PROJECT_DIR$/../UMAPI/settings-plugin" />
@@ -51,6 +60,8 @@
             <option value="$PROJECT_DIR$/../UMAPI/api" />
             <option value="$PROJECT_DIR$/../UMAPI/gradle-plugin" />
             <option value="$PROJECT_DIR$/../UMAPI/platforms" />
+            <option value="$PROJECT_DIR$/../UMAPI/platforms/fabric-1.18.2" />
+            <option value="$PROJECT_DIR$/../UMAPI/platforms/fabric-1.19.2" />
             <option value="$PROJECT_DIR$/../UMAPI/platforms/fabric-1.20.1" />
             <option value="$PROJECT_DIR$/../UMAPI/platforms/fabric-1.20.4" />
             <option value="$PROJECT_DIR$/../UMAPI/platforms/fabric-1.20.6" />
@@ -60,6 +71,11 @@
             <option value="$PROJECT_DIR$/../UMAPI/platforms/fabric-1.21.3" />
             <option value="$PROJECT_DIR$/../UMAPI/platforms/fabric-1.21.5" />
             <option value="$PROJECT_DIR$/../UMAPI/platforms/fabric-1.21.8" />
+            <option value="$PROJECT_DIR$/../UMAPI/platforms/fabric-26.1.2" />
+            <option value="$PROJECT_DIR$/../UMAPI/platforms/fabric-26.2" />
+            <option value="$PROJECT_DIR$/../UMAPI/platforms/forge-1.16.5" />
+            <option value="$PROJECT_DIR$/../UMAPI/platforms/forge-1.18.2" />
+            <option value="$PROJECT_DIR$/../UMAPI/platforms/forge-1.19.2" />
             <option value="$PROJECT_DIR$/../UMAPI/platforms/forge-1.20.1" />
             <option value="$PROJECT_DIR$/../UMAPI/platforms/forge-1.20.4" />
             <option value="$PROJECT_DIR$/../UMAPI/platforms/forge-1.20.6" />
@@ -72,6 +88,8 @@
             <option value="$PROJECT_DIR$/../UMAPI/platforms/neoforge-1.21.3" />
             <option value="$PROJECT_DIR$/../UMAPI/platforms/neoforge-1.21.5" />
             <option value="$PROJECT_DIR$/../UMAPI/platforms/neoforge-1.21.8" />
+            <option value="$PROJECT_DIR$/../UMAPI/platforms/neoforge-26.1.2" />
+            <option value="$PROJECT_DIR$/../UMAPI/platforms/neoforge-26.2" />
             <option value="$PROJECT_DIR$/../UMAPI/platforms/quilt-1.20.1" />
             <option value="$PROJECT_DIR$/../UMAPI/platforms/quilt-1.20.4" />
             <option value="$PROJECT_DIR$/../UMAPI/settings-plugin" />

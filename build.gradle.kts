@@ -15,6 +15,8 @@ umapi {
     }
 
     targets {
+        fabric("1.18.2")
+        fabric("1.19.2")
         fabric("1.20.1")
         fabric("1.20.4")
         fabric("1.20.6")
@@ -24,6 +26,8 @@ umapi {
         fabric("1.21.8")
         fabric("1.21.10")
         fabric("1.21.11")
+        fabric("26.1.2")
+        fabric("26.2")
         neoforge("1.20.1")
         neoforge("1.20.4")
         neoforge("1.20.6")
@@ -33,6 +37,11 @@ umapi {
         neoforge("1.21.8")
         neoforge("1.21.10")
         neoforge("1.21.11")
+        neoforge("26.1.2")
+        neoforge("26.2")
+        forge("1.16.5")
+        forge("1.18.2")
+        forge("1.19.2")
         forge("1.20.1")
         forge("1.20.4")
         forge("1.20.6")
